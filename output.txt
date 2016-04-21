@@ -1,0 +1,24 @@
+[?1049h[1;24r(B[m[4l[?7h[?1h=[H[2Jx is 1
+x is 2
+x is 3
+x is 4
+x is 5
+x is 6
+x is 7
+x is 8
+x is 9
+x is 10
+x is 11
+x is 12
+x is 13
+x is 14
+x is 15
+x is 16
+x is 17
+x is 18
+x is 19
+x is 20
+x is 21
+x is 22
+x is 23
+x is 24x is 25x is 26x is 27x is 28x is 29x is 30x is 31x is 32x is 33x is 34x [?7li[?7h[?7lx[?7h[24;1H[?1049l[?1l>

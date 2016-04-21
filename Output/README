@@ -1,0 +1,80 @@
+
+
+
+name                    TANVIR SAJED
+ONE Card number         1263382
+Unix id                 tsajed
+lecture section         A1
+instructor's name       Martin Mueller
+lab section             D05
+TA's name               Van hai Ho
+
+
+Assignment 3
+
+lander.c, functions.c and functions_i.c contains all the functions 
+that are required by the lander. struct.h, functions.h and functions_i.h
+contains the macro, function protypes and struct definitions. lander.c
+contains the main() function to run the game.
+
+lander.c has two modes, one using -i, which is for improvements. Another
+mode is the normal mode which is to mimick the specific lander given in
+assignment 3. My lander was able to mimick all the properties of the given
+lander and add some improvements to it in -i mode.My lander rotates, 
+falls under gravity after each 0.05 second, and creates thrust just like
+the original lander. Also, the shape of the lander is kept the same to
+compare behavior.
+
+Improvements added :
+
+1) Improved and intelligent Parsing of command line arguments 
+
+   The lander given to us was efficent but it lacked to differentiate between
+   strings and numbers. The game run even if we put a string after the gravity
+   and thrust, -g and -t. It was an error that the lander was not able to 
+   pick up. 
+
+   My improved lander checks whether the [option] after -g and -t is 
+   a number or not. If it is a number the game continues, if it's not a 
+   number the game quits. It was an improvement required to make for the
+   game to function properly.
+
+2)  Asteriods moving randomly and attracted by gravity, and asteroids 
+    can strike and destroy the lander.
+
+    Although the explosion is not visually done, the game can detect
+    asteroid collisoins between the lander and the asteroids that are
+    created randomly but are under the effect of gravity and their high
+    velocity. They fall near the lander, and the lander can crash with
+    the asteroids causing the game to quit.But the asteroids do not
+    collide with the landscape since it is not required at all. The lander
+    needs to escape the asteroids, that's the meaning of the game.
+
+3)  A timer is used to count time, of format mm:ss
+
+    A timer is used to count the time taken to land or any collisions. It
+    does not count time of hours, it only counts minutes and seconds.
+    However if the game contiues for more than an hour, the minutes will
+    increase from 60 and no hour section will be displayed. The timer ends
+    when a crash or landing is detected, or if the fuel runs out.
+
+4)  A fuel gauge is displayed at the top right, not nearly the corner. The
+    fuel gauge displays the current fuel level of the lander. It is a
+    rectangular meter and if the fuel runs out, the game will end printing
+    out of fuel. The lander is made to loose fuel after 100 X 0.05 seconds
+    if it floats under gravity and rotates. It's because the lander has
+    to use fuel to run its machines inside, lights and cabins and 
+    electricity. If thrust is used, the lander looses fuel quicker than
+    normal.
+
+5)  Intersection detection is more accurate than sample lander
+
+    When the sample lander intersections and it crashes or lands, 
+    its intersection is not accurate, the lander is not placed exactly on
+    the land segment that it intersects, part of the lander still inside or 
+    outside the line segment. It varies, according to thrust and rotation.
+
+    My improved lander is slightly better than the sample lander in the sense
+    it detects intersection better using a different algorithm. My lander
+    is closer to the intersected line segment than the sample lander.
+
