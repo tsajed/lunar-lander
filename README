@@ -1,16 +1,10 @@
 
 
 
-name                    TANVIR SAJED
-ONE Card number         1263382
-Unix id                 tsajed
-lecture section         A1
-instructor's name       Martin Mueller
-lab section             D05
-TA's name               Van hai Ho
+Developer                    TANVIR SAJED
 
 
-Assignment 3
+
 
 lander.c, functions.c and functions_i.c contains all the functions 
 that are required by the lander. struct.h, functions.h and functions_i.h
